@@ -1,0 +1,187 @@
+/* Global */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Primary colors */
+:root {
+  --grey: #696969;
+  --milky: #f6f6f6;
+}
+
+hr {
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  border: none;
+  height: 0.2px;
+  background: #c0c0c0;
+}
+
+.hide {
+  display: none;
+}
+
+.reorder {
+  font-size: 16px;
+  color: #c0c0c0;
+  cursor: move;
+}
+
+.delete {
+  color: #c0c0c0;
+  cursor: pointer;
+}
+
+.container {
+  background: var(--milky);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.app-body {
+  margin: auto;
+  width: 60%;
+  min-width: 300px;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+header h1 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+header i {
+  transform: rotate(120deg);
+  font-size: 13px;
+  cursor: pointer;
+  color: #c0c0c0;
+}
+
+.enter-todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.enter-todo input {
+  border: none;
+  width: 100%;
+}
+
+.todo-event input {
+  border: 0;
+  outline: none;
+}
+
+.enter-todo input:focus {
+  outline: none;
+}
+
+.enter {
+  height: 10px;
+  font-size: 14px;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+
+#enter-todo::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+#enter-todo::-moz-placeholder {
+  font-style: italic;
+}
+
+#enter-todo:-moz-placeholder {
+  font-style: italic;
+}
+
+#enter-todo:-ms-input-placeholder {
+  font-style: italic;
+}
+
+#clear-completed {
+  padding: 10px;
+  cursor: pointer;
+  background: var(--milky);
+  border: 0;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  display: none;
+}
+
+#clear-completed:hover {
+  font-weight: 600;
+}
+
+.todo-event {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-event input[type="text"] {
+  width: 89.8%;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.active {
+  background-color: var(--milky);
+}
+
+.check {
+  width: 15px;
+  height: 15px;
+}
+
+.activity {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.todo-collection ul {
+  padding: 5px 0;
+}
+
+.todo-collection ul li {
+  display: flex;
+  align-items: center;
+}
+
+.note {
+  font-size: 12px;
+  display: none;
+}
